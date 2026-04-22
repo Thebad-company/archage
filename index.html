@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Water Bridge View | Luxury Lake-Led Living</title>
-    <meta name="description" content="An exclusive enclave of 30 luxury villas on Tehri Lake, Uttarakhand. Low-density, lake-facing, and immersed in calm.">
+    <title>Archage Tehri Project</title>
+    <meta name="description"
+        content="An exclusive enclave of 30 luxury villas on Tehri Lake, Uttarakhand. Low-density, lake-facing, and immersed in calm.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+
+<body data-theme="evening">
     <div class="page-aura page-aura-one"></div>
     <div class="page-aura page-aura-two"></div>
 
     <nav class="navbar" id="navbar">
-        <div class="header-brand">
-            <a href="#" class="logo">
-                <img src="assets/logo.png" alt="Blue Water Bridge View">
-            </a>
-            <span class="brand-divider"></span>
-            <span class="brand-tagline">Archage</span>
+        <div class="nav-container container">
+            <div class="header-brand">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Blue Water Bridge View">
+                </a>
+                <span class="brand-divider"></span>
+                <span class="brand-tagline">Archage</span>
+            </div>
+
+            <div class="nav-right">
+                <div class="theme-switcher">
+                    <button class="theme-btn morning" data-set-theme="morning" title="Morning Mode">
+                        <span class="theme-icon">☼</span>
+                    </button>
+                    <button class="theme-btn evening active" data-set-theme="evening" title="Evening Mode">
+                        <span class="theme-icon">⌥</span>
+                    </button>
+                    <button class="theme-btn night" data-set-theme="night" title="Night Mode">
+                        <span class="theme-icon">☾</span>
+                    </button>
+                </div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">The Reality</a></li>
+                    <li><a href="#villas">Villas</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#experience">The Experience</a></li>
+                    <li><a href="#contact" class="nav-cta">Inquire</a></li>
+                </ul>
+
+                <button class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#about">The Reality</a></li>
-            <li><a href="#villas">Villas</a></li>
-            <li><a href="#amenities">Amenities</a></li>
-            <li><a href="#location">Location</a></li>
-            <li><a href="#experience">The Experience</a></li>
-            <li><a href="#contact" class="btn-outline">Inquire</a></li>
-        </ul>
     </nav>
 
     <header class="hero" data-parallax-scope>
         <div class="hero-bg-container">
-            <div class="hero-bg parallax-shift" data-parallax-speed="0.18" style="background-image: url('assets/lake_pano.jpg')"></div>
+            <div class="hero-bg parallax-shift theme-lake-pano" data-parallax-speed="0.18"></div>
             <div class="hero-grid"></div>
             <div class="hero-glow hero-glow-left"></div>
             <div class="hero-glow hero-glow-right"></div>
@@ -98,13 +125,14 @@
 
     <section class="image-break" data-parallax-scope>
         <div class="parallax-container">
-            <div class="parallax-img parallax-shift" data-parallax-speed="0.24" style="background-image: url('assets/hero_bridge.png')"></div>
+            <div class="parallax-img parallax-shift villa-shot-bg" data-parallax-speed="0.24"></div>
         </div>
         <div class="image-break-overlay"></div>
         <div class="parallax-overlay cinematic-panel">
             <span class="section-label fade-in-premium">A New Horizon</span>
             <h2 class="fade-in-premium">The Shift</h2>
-            <p class="fade-in-premium">The next decade will not reward more construction. It will reward access. Access to clean air, water, and silence.</p>
+            <p class="fade-in-premium">The next decade will not reward more construction. It will reward access. Access
+                to clean air, water, and silence.</p>
         </div>
     </section>
 
@@ -115,8 +143,11 @@
                 <span class="section-label">02 · The Architecture</span>
                 <h2>A Choreography of Glass and Stone</h2>
                 <div>
-                    <p class="lead-copy">Inspired by the rugged purity of the Himalayas, our villas are a dialogue between architectural precision and raw nature.</p>
-                    <p>Using locally sourced quartz stone and expansive low-E glass, we have created structures that don't just sit on the land—they belong to it. The design prioritizes the view as the primary 'artwork' of every room.</p>
+                    <p class="lead-copy">Inspired by the rugged purity of the Himalayas, our villas are a dialogue
+                        between architectural precision and raw nature.</p>
+                    <p>Using locally sourced quartz stone and expansive low-E glass, we have created structures that
+                        don't just sit on the land—they belong to it. The design prioritizes the view as the primary
+                        'artwork' of every room.</p>
                 </div>
                 <div class="features-list stagger-group" style="margin-top: 40px;">
                     <div class="feature-item">
@@ -125,16 +156,19 @@
                     </div>
                     <div class="feature-item">
                         <span class="dot"></span>
-                        <p><strong>Double-Height Living:</strong> A volume of space that matches the scale of the valley.</p>
+                        <p><strong>Double-Height Living:</strong> A volume of space that matches the scale of the
+                            valley.</p>
                     </div>
                     <div class="feature-item">
                         <span class="dot"></span>
-                        <p><strong>Thermal Massing:</strong> Intelligent stone placement for natural climate regulation.</p>
+                        <p><strong>Thermal Massing:</strong> Intelligent stone placement for natural climate regulation.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="image-block reveal-right image-frame" data-parallax-scope>
-                <img class="parallax-shift" data-parallax-speed="0.1" src="assets/villa_exterior.png" alt="Architectural Detail">
+            <div class="image-block reveal-image image-frame" data-parallax-scope>
+                <img class="parallax-shift theme-villa-ext" data-parallax-speed="0.1"
+                    src="assets/themes/villa_ext_evening.png" alt="Architectural Detail">
             </div>
         </div>
     </section>
@@ -145,17 +179,20 @@
             <div class="section-intro centered-intro">
                 <span class="section-label fade-in-premium">03 · The Vision</span>
                 <h2 class="fade-in-premium">Thirty Villas. <br>Zero Compromises.</h2>
-                <p class="fade-in-premium lead-copy">Low-density master plan. 100% lake-facing orientation. Designed to face the lake, not compete with it.</p>
+                <p class="fade-in-premium lead-copy">Low-density master plan. 100% lake-facing orientation. Designed to
+                    face the lake, not compete with it.</p>
             </div>
 
             <div class="features-grid stagger-group">
                 <div class="feature-card fade-in-premium bordered-card">
                     <h4>Unobstructed Views</h4>
-                    <p>Every plot is strictly oriented to an unobstructed line of the lake and the illuminated iconic Dobra-Chanthi bridge.</p>
+                    <p>Every plot is strictly oriented to an unobstructed line of the lake and the illuminated iconic
+                        Dobra-Chanthi bridge.</p>
                 </div>
                 <div class="feature-card fade-in-premium bordered-card">
                     <h4>Calibrated Stillness</h4>
-                    <p>A shared, lake-oriented ecosystem designed for a tourism market that is scaling, not just stabilising.</p>
+                    <p>A shared, lake-oriented ecosystem designed for a tourism market that is scaling, not just
+                        stabilising.</p>
                 </div>
                 <div class="feature-card fade-in-premium bordered-card">
                     <h4>Long-Term Scarcity</h4>
@@ -168,15 +205,20 @@
     <section id="experience" class="section section-framed">
         <div class="section-divider"></div>
         <div class="container split-layout experience-layout">
-            <div class="image-block reveal-left image-frame" data-parallax-scope>
-                <img class="parallax-shift" data-parallax-speed="0.14" src="assets/villa_shot.jpg" alt="Villa View">
+            <div class="image-block reveal-image image-frame" data-parallax-scope>
+                <img class="parallax-shift theme-villa-ext" data-parallax-speed="0.14"
+                    src="assets/themes/villa_ext_evening.png" alt="Villa View">
             </div>
             <div class="text-block reveal-right">
                 <span class="section-label">04 · The Experience</span>
                 <h2>A Rhythm of Reflection</h2>
-                <p class="experience-quote">"Five years from now — this will either be obvious, or it will be unavailable."</p>
+                <p class="experience-quote">"Five years from now — this will either be obvious, or it will be
+                    unavailable."</p>
                 <div class="body-copy">
-                    <p>Tehri is no longer a stopover. It is a destination. Six hours from Delhi, but a world apart.</p>
+                    <p>Tehri is no longer a stopover. It is a destination. The new Dehradun Expressway has brought us
+                        within a sleek 6-hour reach of Delhi. By 2029, the Rani Pokhari-Tehri tunnel project will
+                        further calibrate the journey to just 4 hours — making the mountain-lake retreat as accessible
+                        as it is exclusive.</p>
                 </div>
             </div>
         </div>
@@ -189,8 +231,11 @@
                 <span class="section-label">05 · The Interiors</span>
                 <h2>Internalized Horizon</h2>
                 <div>
-                    <p class="lead-copy">The interiors are not designed to compete with the view; they are designed to frame it.</p>
-                    <p>Minimalist palettes, bespoke furniture from reclaimed oak, and ambient lighting that mirrors the soft Tehri dusk. Every villa follows an open-plan philosophy that ensures the lake remains the focal point of the home.</p>
+                    <p class="lead-copy">The interiors are not designed to compete with the view; they are designed to
+                        frame it.</p>
+                    <p>Minimalist palettes, bespoke furniture from reclaimed oak, and ambient lighting that mirrors the
+                        soft Tehri dusk. Every villa follows an open-plan philosophy that ensures the lake remains the
+                        focal point of the home.</p>
                 </div>
                 <div class="features-list stagger-group" style="margin-top: 40px;">
                     <div class="feature-item">
@@ -203,8 +248,9 @@
                     </div>
                 </div>
             </div>
-            <div class="image-block reveal-right image-frame" data-parallax-scope>
-                <img class="parallax-shift" data-parallax-speed="0.1" src="assets/villa_interior.png" alt="Villa Interior">
+            <div class="image-block reveal-image image-frame" data-parallax-scope>
+                <img class="parallax-shift theme-villa-int" data-parallax-speed="0.1"
+                    src="assets/themes/villa_int_evening.png" alt="Villa Interior">
             </div>
         </div>
     </section>
@@ -215,20 +261,53 @@
             <div class="section-intro centered-intro">
                 <span class="section-label fade-in-premium">06 · The Amenities</span>
                 <h2 class="fade-in-premium">The Luxury of Ease</h2>
-                <p class="fade-in-premium lead-copy">A bespoke suite of services designed to ensure that your time at the lake is spent on what matters most.</p>
+                <p class="fade-in-premium lead-copy">A bespoke suite of services designed to ensure that your time at
+                    the lake is spent on what matters most.</p>
             </div>
             <div class="features-grid stagger-group">
                 <div class="feature-card fade-in-premium bordered-card">
                     <h4>Wellness & Soul</h4>
-                    <p>Private yoga decks, meditation corners, and access to organic produce from our mountain-side kitchen gardens.</p>
+                    <p>Private yoga decks, meditation corners, and access to organic produce from our mountain-side
+                        kitchen gardens.</p>
                 </div>
                 <div class="feature-card fade-in-premium bordered-card">
                     <h4>Concierge Life</h4>
-                    <p>On-call housekeeping, pre-arrival stocking, and dedicated estate security for absolute peace of mind.</p>
+                    <p>On-call housekeeping, pre-arrival stocking, and dedicated estate security for absolute peace of
+                        mind.</p>
                 </div>
                 <div class="feature-card fade-in-premium bordered-card">
                     <h4>Lake Access</h4>
-                    <p>Dedicated waterfront mooring for personal boats and a private lakeside promenade for evening walks.</p>
+                    <p>Dedicated waterfront mooring for personal boats and a private lakeside promenade for evening
+                        walks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="philosophy" class="section">
+        <div class="container lifestyle-pillars">
+            <div class="pillar-item reveal-up">
+                <div class="pillar-content">
+                    <span class="pillar-num">01</span>
+                    <h3>Life Beyond Ordinary</h3>
+                    <p>Experience a life that rejects the mundane in favor of the monumental. Each day is curated to be
+                        an encounter with the sublime.</p>
+                </div>
+            </div>
+            <div class="pillar-item reveal-up" data-delay="0.1">
+                <div class="pillar-content">
+                    <span class="pillar-num">02</span>
+                    <h3>Built for Generations</h3>
+                    <p>These aren't just villas; they are legacies. Engineered with timeless stone and modern steel to
+                        be an heirloom for your family.</p>
+                </div>
+            </div>
+            <div class="pillar-item reveal-up" data-delay="0.2">
+                <div class="pillar-content">
+                    <span class="pillar-num">03</span>
+                    <h3>Nature Breathes with You</h3>
+                    <p>Architecture that listens. Where the boundary between your home and the Tehri breeze dissolves
+                        into a single, fluid breath.</p>
                 </div>
             </div>
         </div>
@@ -241,35 +320,37 @@
                 <span class="section-label">07 · The Tehri Canvas</span>
                 <h2>A Sea in the Sky</h2>
                 <div>
-                    <p class="lead-copy">Tehri Lake is not just a body of water; it is a micro-climate of calm. With 52 square kilometers of surface area, it offers a scale of waterfront living previously unknown in the Indian hills.</p>
-                    <p>At 1,800 meters, the air is thin, crisp, and perpetually cool. The massive thermal mass of the lake regulates the surrounding valley, creating a perpetual spring. It is the only place in the Himalayas where you can watch the sunset over a horizon of blue water.</p>
+                    <p class="lead-copy">Tehri Lake is not just a body of water; it is a micro-climate of calm. With 52
+                        square kilometers of surface area, it offers a scale of waterfront living previously unknown in
+                        the Indian hills.</p>
+                    <p>At 1,800 meters, the air is thin, crisp, and perpetually cool. The massive thermal mass of the
+                        lake regulates the surrounding valley, creating a perpetual spring. It is the only place in the
+                        Himalayas where you can watch the sunset over a horizon of blue water.</p>
                 </div>
             </div>
-            <div class="image-block reveal-right image-frame" data-parallax-scope>
-                <img class="parallax-shift" data-parallax-speed="0.12" src="assets/lake_pano.jpg" alt="Lake View">
+            <div class="image-block reveal-image image-frame" data-parallax-scope>
+                <img class="parallax-shift theme-lake-pano-img" data-parallax-speed="0.12"
+                    src="assets/themes/lake_evening.png" alt="Lake View">
             </div>
         </div>
-    </section>
-
-    <section class="image-break" data-parallax-scope>
-        <div class="parallax-container">
-            <div class="parallax-img parallax-shift" data-parallax-speed="0.2" style="background-image: url('assets/hero_bridge.png')"></div>
-        </div>
-        <div class="image-break-overlay"></div>
     </section>
 
     <section id="terrace" class="section section-framed">
         <div class="section-divider"></div>
         <div class="container split-layout experience-layout">
-            <div class="image-block reveal-left image-frame" data-parallax-scope>
-                <img class="parallax-shift" data-parallax-speed="0.14" src="assets/poolside_luxury.png" alt="Poolside Luxury">
+            <div class="image-block reveal-image image-frame" data-parallax-scope>
+                <img class="parallax-shift theme-pool" data-parallax-speed="0.14" src="assets/themes/pool_evening.png"
+                    alt="Poolside Luxury">
             </div>
             <div class="text-block reveal-right">
                 <span class="section-label">08 · The Terrace</span>
                 <h2>Suspended in Blue</h2>
                 <div>
-                    <p class="lead-copy">The most prized square footage of Blue Water Bridge View isn't inside. It's out here.</p>
-                    <p>Each villa features an expansive limestone terrace and a private infinity edge that merges seamlessly with the Tehri horizon. Designed for evening hosting and quiet morning reflection alike.</p>
+                    <p class="lead-copy">The most prized square footage of Blue Water Bridge View isn't inside. It's out
+                        here.</p>
+                    <p>Each villa features an expansive limestone terrace and a private infinity edge that merges
+                        seamlessly with the Tehri horizon. Designed for evening hosting and quiet morning reflection
+                        alike.</p>
                 </div>
             </div>
         </div>
@@ -318,11 +399,136 @@
                 <span class="section-label">10 · The Philosophy</span>
                 <h2>The Art of Slowing Down</h2>
                 <div class="lead-copy">
-                    <p>In an era where urban landscapes grow denser, and life moves unrelentingly, Blue Water Bridge View offers a rare alternative. A philosophy of ‘Calibrated Stillness’—where every detail is designed to help you reconnect with the natural rhythm of the water and the mountains.</p>
+                    <p>In an era where urban landscapes grow denser, and life moves unrelentingly, Blue Water Bridge
+                        View offers a rare alternative. A philosophy of ‘Calibrated Stillness’—where every detail is
+                        designed to help you reconnect with the natural rhythm of the water and the mountains.</p>
                 </div>
             </div>
             <div class="image-block reveal-right image-frame" data-parallax-scope>
-                <img class="parallax-shift" data-parallax-speed="0.08" src="assets/mist_philosophy.png" alt="Lake Serenity">
+                <img class="parallax-shift theme-mist-phil" data-parallax-speed="0.08" src="assets/mist_philosophy.png"
+                    alt="Lake Serenity">
+            </div>
+        </div>
+    </section>
+
+    <section id="investment" class="section dark-bg section-framed">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="text-center-wrap reveal-up" style="max-width: 800px; margin: 0 auto 60px; text-align: center;">
+                <span class="section-label">11 · Strategic Scarcity</span>
+                <h2 style="font-size: clamp(40px, 6vw, 72px); margin-bottom: 25px;">Not all mountain properties are built the same.</h2>
+                <p class="lead-copy centered" style="font-size: 19px; opacity: 0.8; max-width: 650px; margin: 0 auto;">The difference is not visible in brochures. It’s visible in outcomes.</p>
+            </div>
+            <div class="comparison-system stagger-group">
+                <div class="comparison-card archage-win fade-in-premium">
+                    <div class="card-tag">Archage Advantage</div>
+                    <ul class="comp-list">
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c1.5 0 1.5-2 3-2s1.5 2 3 2 1.5-2 3-2 1.5 2 3 2 1.5-2 3-2 1.5 2 3 2"/><path d="M2 17c1.5 0 1.5-2 3-2s1.5 2 3 2 1.5-2 3-2 1.5 2 3 2 1.5-2 3-2 1.5 2 3 2"/></svg></div>
+                            Direct River Facing
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m8 20 4-10 4 10M4 20l4-7 4 7M12 20l4-13 4 13"/></svg></div>
+                            Himalayan Placement
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7Z"/></svg></div>
+                            Boutique Luxury
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg></div>
+                            Safer Slope (20°)
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div>
+                            Lower Entry Price
+                        </li>
+                    </ul>
+                </div>
+                <div class="comparison-card others-generic fade-in-premium">
+                    <div class="card-tag">The Marketplace</div>
+                    <ul class="comp-list">
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"><path d="M2.5 19h19M6 19s0-3 3-3 3 6 6 6 3-3 3-3M2 12s4.5-9 10-9 10 9 10 9-4.5 9-10 9-10-9-10-9Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+                            Distant View
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                            Generic Hill Location
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M8 10h.01M16 10h.01M8 14h.01M16 14h.01"/></svg></div>
+                            Commercial Build
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"><path d="m3 11 18-5M3 16l18-5M3 21l18-5"/></svg></div>
+                            Steep Slope (35°)
+                        </li>
+                        <li>
+                            <div class="icon-wrap"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.4"><circle cx="12" cy="12" r="8"/><path d="m16 12-4-4-4 4M12 8v8"/></svg></div>
+                            Higher Entry
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="investment-reality reveal-up">
+                <span class="reality-label">Investment Reality</span>
+                <div class="reality-grid">
+                    <div class="reality-segment win-segment">
+                        <div class="segment-label">Archage</div>
+                        <div class="segment-growth">15 Cr <span class="arrow">→</span> 35 Cr</div>
+                        <div class="segment-period">3 Year Projection</div>
+                    </div>
+                    <div class="reality-segment alt-segment">
+                        <div class="segment-label">Others</div>
+                        <div class="segment-growth">25 Cr <span class="arrow">→</span> 35 Cr</div>
+                        <div class="segment-period">3 Year Projection</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="connectivity-highlight fade-in-premium glass-card"
+                style="margin-top: 80px; padding: 40px; border-left: 3px solid var(--mineral); display: inline-block; width: 100%; text-align: left;">
+                <h4 style="margin-bottom: 20px; font-family: var(--font-mono); font-size: 14px; text-transform: uppercase;">
+                    Connectivity Pulse</h4>
+                <p style="margin-bottom: 15px;"><strong>Dehradun Expressway:</strong> Currently reduces transit to 6
+                    hours from Delhi.</p>
+                <p><strong>2029 Vision:</strong> The Rani Pokhari-Tehri tunnel will further compress the journey to
+                    just 4 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projections" class="section section-framed">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="text-center-wrap reveal-up" style="max-width: 800px; margin: 0 auto 80px; text-align: center;">
+                <span class="section-label">12 · Yield Mastery</span>
+                <h2 style="font-size: clamp(48px, 6vw, 84px); margin-bottom: 30px;">Exponential Projections</h2>
+                <p class="lead-copy centered" style="font-size: 20px; opacity: 0.8;">A convergence of infrastructure and
+                    extreme scarcity creates a unique appreciation window for the early connoisseur.</p>
+            </div>
+
+            <div class="projections-grid">
+                <div class="projection-card reveal-up" data-delay="0.1">
+                    <div class="proj-stat">60<span class="percent">%</span></div>
+                    <h3>Capital Surge</h3>
+                    <p>Projected minimum appreciation by 2029, triggered by the Rani Pokhari tunnel completion and
+                        4-hour Delhi connectivity.</p>
+                </div>
+                <div class="projection-card reveal-up" data-delay="0.2">
+                    <div class="proj-stat">12<span class="percent">%</span></div>
+                    <h3>Expected Yield</h3>
+                    <p>Targeted annual rental yield through our managed hospitality program, tapping into the regional
+                        ultra-luxury market.</p>
+                </div>
+                <div class="projection-card reveal-up" data-delay="0.3">
+                    <div class="proj-stat">30<span class="unit">Units</span></div>
+                    <h3>Strategic Scarcity</h3>
+                    <p>In a world of mass-market developments, an enclave of only 30 ensures your secondary value
+                        remains absolute.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -338,11 +544,30 @@
                     <span class="brand-divider"></span>
                     <span class="brand-tagline">Archage</span>
                 </div>
-                <p class="footer-lead fade-in-premium">You are not evaluating villas. You are evaluating a moment in time.</p>
+                <p class="footer-lead fade-in-premium">You are not evaluating villas. You are evaluating a moment in
+                    time.</p>
                 <p class="section-label fade-in-premium">Tehri Lake · Uttarakhand</p>
+                
+                <div class="footer-details stagger-group">
+                    <div class="footer-detail-item fade-in-premium">
+                        <div class="detail-header">
+                            <span class="detail-icon">📞</span>
+                            <h5>Call Us</h5>
+                        </div>
+                        <p>(+91) 70489 44890</p>
+                        <span class="detail-meta">Monday–Friday | 9am–5pm (IST +1)</span>
+                    </div>
+                    <div class="footer-detail-item fade-in-premium">
+                        <div class="detail-header">
+                            <span class="detail-icon">📍</span>
+                            <h5>Visit Us</h5>
+                        </div>
+                        <p>C-64 Nizamuddin East, New Delhi, 110013</p>
+                    </div>
+                </div>
             </div>
             <div class="contact-card fade-in-premium">
-                <form class="contact-form">
+                <form id="contact-form" class="contact-form">
                     <div class="input-group">
                         <input type="text" placeholder="Your Name" required>
                     </div>
@@ -354,13 +579,38 @@
                     </div>
                     <button type="submit" class="btn-solid">Request Brief</button>
                 </form>
+
+                <div id="form-success" class="form-success-overlay">
+                    <div class="success-content">
+                        <div class="success-icon">✓</div>
+                        <h3>Enquiry Received</h3>
+                        <p>Our concierge will contact you shortly with the exclusive brief.</p>
+                        <button type="button" class="btn-text" onclick="const f=document.getElementById('contact-form'); f.reset(); f.style.display='flex'; document.getElementById('form-success').style.display='none';">Send Another</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer-meta">
-            &copy; 2026 Blue Water Bridge View. All rights reserved.
+            <div class="meta-container">
+                <span class="copyright">&copy; 2026 Archage. All rights reserved.</span>
+                <div class="site-credits">
+                    <div class="credit-pill">
+                        <a href="https://fabulousmedia.in" target="_blank" rel="noopener" class="credit-link"
+                            aria-label="FabulousMedia">
+                            <img src="assets/sitecredits/fabulous.png" alt="FabulousMedia">
+                        </a>
+                        <div class="credit-divider"></div>
+                        <a href="https://gocommercially.com" target="_blank" rel="noopener" class="credit-link"
+                            aria-label="GoCommercially">
+                            <img src="assets/sitecredits/gocomercially.svg" alt="GoCommercially">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

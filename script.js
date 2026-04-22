@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    const revealElements = [...document.querySelectorAll('.fade-in-premium, .reveal-left, .reveal-right')];
+    const revealElements = [...document.querySelectorAll('.fade-in-premium, .reveal-left, .reveal-right, .reveal-image')];
     const heroRevealElements = [...document.querySelectorAll('.hero .reveal-text')];
     const parallaxElements = [...document.querySelectorAll('.parallax-shift')];
     const staggerGroups = document.querySelectorAll('.stagger-group');
@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
             revealObserver.unobserve(entry.target);
         });
     }, {
-        threshold: 0.18,
-        rootMargin: '0px 0px -8% 0px'
+        threshold: 0.1,
+        rootMargin: '0px 0px -5% 0px'
     });
 
     revealElements.forEach(el => revealObserver.observe(el));
@@ -81,7 +81,89 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', updateParallax);
 
+    // --- THEME SWITCHING LOGIC ---
+    const themeButtons = document.querySelectorAll('.theme-btn');
+
+    const themeColors = {
+        'morning': 'radial-gradient(circle at center, #ffffff 0%, #e9eff5 100%)',
+        'evening': 'radial-gradient(circle at center, #2c1810 0%, #160d09 100%)',
+        'night': 'radial-gradient(circle at center, #0a0e14 0%, #020406 100%)'
+    };
+
+    const setTheme = (theme) => {
+        if (body.getAttribute('data-theme') === theme) return;
+        
+        body.setAttribute('data-theme', theme);
+        
+        // Update active button
+        themeButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.setTheme === theme);
+        });
+
+        // Update image sources
+        const themeImages = {
+            'theme-villa-ext': `assets/themes/villa_ext_${theme}.png`,
+            'theme-villa-int': `assets/themes/villa_int_${theme}.png`,
+            'theme-lake-pano-img': theme === 'morning' ? 'assets/morning-view.jpg' : `assets/themes/lake_${theme}.png`,
+            'theme-pool': `assets/themes/pool_${theme}.png`,
+            'theme-mist-phil': `assets/themes/mist_phil_${theme}.png`
+        };
+
+        Object.entries(themeImages).forEach(([className, src]) => {
+            const imgs = document.querySelectorAll(`.${className}`);
+            imgs.forEach(img => {
+                img.src = src;
+            });
+        });
+        
+        // Store preference
+        localStorage.setItem('preferred-theme', theme);
+    };
+
+    themeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            setTheme(btn.dataset.setTheme);
+        });
+    });
+
+    // Check for stored preference
+    const storedTheme = localStorage.getItem('preferred-theme') || 'evening';
+    setTheme(storedTheme);
+
     activateHero();
     updateNavbar();
     updateParallax();
+
+    // --- MOBILE MENU ---
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // Close menu on link click
+    if (navLinks) {
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle?.classList.remove('active');
+                navLinks?.classList.remove('active');
+            });
+        });
+    }
+
+    // --- FORM HANDLING ---
+    const contactForm = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            contactForm.style.display = 'none';
+            formSuccess.style.display = 'flex';
+        });
+    }
 });
