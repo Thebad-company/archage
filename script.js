@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => el.classList.add('active'));
         heroRevealElements.forEach(el => el.classList.add('active'));
         activateHero();
-        return;
     }
 
     const revealObserver = new IntersectionObserver((entries) => {

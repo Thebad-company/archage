@@ -1539,6 +1539,8 @@ img {
     }
 
     .scroll-cue {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
         bottom: 22px;
     }
 
@@ -1673,6 +1675,7 @@ img {
     }
 
     .nav-links.active {
+        display: flex;
         right: 0;
     }
 
