@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Check for stored preference
-    const storedTheme = localStorage.getItem('preferred-theme') || 'evening';
+    const storedTheme = localStorage.getItem('preferred-theme') || 'morning';
     setTheme(storedTheme);
 
     activateHero();

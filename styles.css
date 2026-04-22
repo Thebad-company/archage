@@ -191,7 +191,7 @@
     --aura-2: rgba(135, 206, 235, 0.15);
     /* Sky Blue instead of Lime Green */
     --hero-overlay: linear-gradient(180deg, rgba(247, 249, 250, 0.1) 0%, rgba(247, 249, 250, 0.3) 50%, rgba(247, 249, 250, 0.8) 100%);
-    --lake-pano: url('assets/lake_pano.jpg');
+    --lake-pano: url('assets/morning-view.jpg');
 }
 
 [data-theme="morning"] .hero-content h1,
