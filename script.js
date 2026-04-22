@@ -1,5 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
+    
+    // --- CUSTOM CURSOR ---
+    const dot = document.querySelector('.custom-cursor-dot');
+    const outline = document.querySelector('.custom-cursor-outline');
+    
+    if (dot && outline) {
+        window.addEventListener('mousemove', (e) => {
+            const { clientX: x, clientY: y } = e;
+            
+            dot.style.opacity = '1';
+            outline.style.opacity = '1';
+            
+            dot.style.left = `${x}px`;
+            dot.style.top = `${y}px`;
+            
+            // Premium smooth follow for outline
+            outline.animate({
+                left: `${x}px`,
+                top: `${y}px`
+            }, { duration: 600, fill: 'forwards' });
+        });
+
+        const handleHover = () => outline.classList.add('hovered');
+        const handleUnhover = () => outline.classList.remove('hovered');
+
+        document.querySelectorAll('a, button, .theme-btn, .slider-dot, .nav-cta').forEach(el => {
+            el.addEventListener('mouseenter', handleHover);
+            el.addEventListener('mouseleave', handleUnhover);
+        });
+
+        window.addEventListener('mouseout', () => {
+            dot.style.opacity = '0';
+            outline.style.opacity = '0';
+        });
+    }
     const navbar = document.getElementById('navbar');
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -91,9 +126,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const setTheme = (theme) => {
         if (body.getAttribute('data-theme') === theme) return;
-        
+
         body.setAttribute('data-theme', theme);
-        
+
         // Update active button
         themeButtons.forEach(btn => {
             btn.classList.toggle('active', btn.dataset.setTheme === theme);
@@ -114,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 img.src = src;
             });
         });
-        
+
         // Store preference
         localStorage.setItem('preferred-theme', theme);
     };
