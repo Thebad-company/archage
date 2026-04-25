@@ -100,124 +100,66 @@
     letter-spacing: -0.01em;
 }
 
-/* --- Investment Section Styles --- */
-.investment-pointers {
+/* --- Value Proposition (The Purpose) --- */
+.value-prop-layout {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 80px;
 }
 
-.pointer-item {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.pointer-icon {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.pointer-text h4 {
-    font-size: 24px;
-    margin-bottom: 6px;
-    font-family: var(--font-serif);
-}
-
-.pointer-text p {
-    font-size: 16px;
-    opacity: 0.7;
-}
-
-.connectivity-highlight {
-    transition: background 0.8s var(--ease-premium);
-}
-
-[data-theme="morning"] .connectivity-highlight {
-    background: rgba(74, 144, 226, 0.04);
-    border: 1px solid rgba(74, 144, 226, 0.1);
-}
-
-[data-theme="evening"] .connectivity-highlight {
-    background: rgba(182, 146, 80, 0.04);
-    border: 1px solid rgba(182, 146, 80, 0.15);
-}
-
-[data-theme="night"] .connectivity-highlight {
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* --- Projections Section --- */
-.projections-grid {
+.value-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
-.projection-card {
-    padding: 80px 40px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: center;
+.value-item {
+    padding: 60px;
+    background: rgba(var(--mineral-rgba), 0.03);
+    border: 1px solid var(--line);
     transition: all 0.6s var(--ease-premium);
-    backdrop-filter: blur(10px);
 }
 
-[data-theme="morning"] .projection-card {
-    background: rgba(255, 255, 255, 0.4);
-    border-color: rgba(74, 144, 226, 0.1);
-}
-
-[data-theme="evening"] .projection-card {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(182, 146, 80, 0.1);
-}
-
-.projection-card:hover {
-    transform: translateY(-12px);
+.value-item:hover {
+    background: rgba(var(--mineral-rgba), 0.06);
     border-color: var(--mineral);
-    background: rgba(206, 172, 93, 0.03);
+    transform: translateY(-8px);
 }
 
-.proj-stat {
-    font-size: 92px;
-    font-family: var(--font-serif);
-    line-height: 1;
-    margin-bottom: 30px;
-    color: var(--mineral);
-    letter-spacing: -0.02em;
-}
-
-.proj-stat .percent,
-.proj-stat .unit {
-    font-size: 32px;
-    vertical-align: super;
-    margin-left: 2px;
-    font-family: var(--font-sans);
-    font-weight: 300;
-}
-
-.projection-card h3 {
-    font-size: 22px;
-    margin-bottom: 18px;
+.value-tag {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-family: var(--font-sans);
-    font-weight: 600;
+    letter-spacing: 0.35em;
+    color: var(--mineral);
+    margin-bottom: 24px;
 }
 
-.projection-card p {
-    font-size: 16px;
-    opacity: 0.65;
-    max-width: 620px;
-    margin: 0 auto;
+.value-item h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.value-item p {
+    font-size: 17px;
+    opacity: 0.7;
+    line-height: 1.8;
 }
 
 @media (max-width: 991px) {
-    .projections-grid {
+    .value-grid {
         grid-template-columns: 1fr;
     }
+    .value-item {
+        padding: 40px;
+    }
+}
+
+/* --- Legacy Section --- */
+#legacy .features-grid {
+    margin-top: 60px;
 }
 
 /* --- Lifestyle Pillars --- */
