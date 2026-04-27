@@ -61,7 +61,7 @@
         </div>
     </nav>
 
-    <header class="hero" data-parallax-scope>
+<header class="hero" data-parallax-scope>
         <div class="hero-bg-container">
             <div class="hero-bg parallax-shift theme-lake-pano" data-parallax-speed="0.18"></div>
             <div class="hero-grid"></div>
@@ -90,7 +90,7 @@
         </a>
     </header>
 
-    <section id="purpose" class="section section-framed">
+<section id="purpose" class="section section-framed">
         <div class="section-divider"></div>
         <div class="container value-prop-layout">
             <div class="section-intro centered-intro">
@@ -119,7 +119,7 @@
         </div>
     </section>
 
-    <section id="about" class="section dark-bg section-framed">
+<section id="about" class="section dark-bg section-framed">
         <div class="section-divider"></div>
         <div class="container split-layout">
             <div class="text-block reveal-left">
@@ -153,227 +153,51 @@
         </div>
     </section>
 
-    <section class="image-break" data-parallax-scope>
-        <div class="parallax-container">
-            <div class="parallax-img parallax-shift villa-shot-bg" data-parallax-speed="0.24"></div>
-        </div>
-        <div class="image-break-overlay"></div>
-        <div class="parallax-overlay cinematic-panel">
-            <span class="section-label fade-in-premium">A New Horizon</span>
-            <h2 class="fade-in-premium">The Shift</h2>
-            <p class="fade-in-premium">The next decade will not reward more construction. It will reward access. Access
-                to clean air, water, and silence.</p>
-        </div>
-    </section>
-
-    <section id="architecture" class="section section-framed">
-        <div class="section-divider"></div>
-        <div class="container split-layout">
-            <div class="text-block reveal-left">
-                <span class="section-label">02 · The Architecture</span>
-                <h2>A Choreography of Glass and Stone</h2>
-                <div>
-                    <p class="lead-copy">Inspired by the rugged purity of the Himalayas, our estates are a dialogue
-                        between architectural precision and raw nature.</p>
-                </div>
-                <div class="features-list stagger-group" style="margin-top: 40px;">
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Locally Sourced:</strong> Quartz stone structures that belong to the land.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Framed Vistas:</strong> Low-E glass prioritizes the view as the primary artwork.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Cantilevered Decks:</strong> Engineered to hover over the lake side slopes.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Double Height Living:</strong> A volume of space that matches the scale of the
-                            valley.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Thermal Massing:</strong> Intelligent stone placement for natural climate regulation.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="image-block reveal-image image-frame" data-parallax-scope>
-                <img class="parallax-shift theme-villa-ext" data-parallax-speed="0.1"
-                    src="assets/themes/villa_ext_evening.png" alt="Architectural Detail">
-            </div>
-        </div>
-    </section>
-
-    <section id="villas" class="section dark-bg section-framed">
+<section id="aqi-comparison" class="section dark-bg section-framed">
         <div class="section-divider"></div>
         <div class="container">
             <div class="section-intro centered-intro">
-                <span class="section-label fade-in-premium">03 · The Estates</span>
-                <h2 class="fade-in-premium">Thirty Estates. <br>Zero Compromises.</h2>
-                <p class="fade-in-premium lead-copy">A low density master plan where each residence is a fully staffed
-                    sanctuary. Designed to
-                    honour the lake, not compete with it.</p>
+                <span class="section-label fade-in-premium">02 · The Air You Breathe</span>
+                <h2 class="fade-in-premium">Live Air Quality</h2>
+                <p class="fade-in-premium lead-copy">The contrast between the urban grid and the mountains, in
+                    real time.</p>
             </div>
 
-            <div class="features-grid stagger-group">
-                <div class="feature-card fade-in-premium bordered-card">
-                    <h4>Unobstructed Views</h4>
-                    <p>Every plot is strictly oriented to an unobstructed line of the lake and the illuminated iconic
-                        Dobra Chanthi bridge.</p>
+            <div class="aqi-grid stagger-group">
+                <div class="aqi-card fade-in-premium aqi-tehri">
+                    <span class="aqi-city">Tehri, Uttarakhand</span>
+                    <div class="aqi-value" id="aqi-tehri-value">--</div>
+                    <span class="aqi-status" id="aqi-tehri-status">Pure & Pristine</span>
                 </div>
-                <div class="feature-card fade-in-premium bordered-card">
-                    <h4>Curated Exclusivity</h4>
-                    <p>A shared, lake oriented ecosystem designed for a tourism market that is scaling, not just
-                        stabilising.</p>
+                <div class="aqi-card fade-in-premium aqi-delhi">
+                    <span class="aqi-city">Delhi</span>
+                    <div class="aqi-value" id="aqi-delhi-value">--</div>
+                    <span class="aqi-status" id="aqi-delhi-status">Fetching...</span>
                 </div>
-                <div class="feature-card fade-in-premium bordered-card">
-                    <h4>Long Term Scarcity</h4>
-                    <p>We are not maximizing units; we are maximizing value. Scarcity is a construction decision.</p>
+                <div class="aqi-card fade-in-premium aqi-gurugram">
+                    <span class="aqi-city">Gurugram</span>
+                    <div class="aqi-value" id="aqi-gurugram-value">--</div>
+                    <span class="aqi-status" id="aqi-gurugram-status">Fetching...</span>
+                </div>
+                <div class="aqi-card fade-in-premium aqi-noida">
+                    <span class="aqi-city">Noida, UP</span>
+                    <div class="aqi-value" id="aqi-noida-value">--</div>
+                    <span class="aqi-status" id="aqi-noida-status">Fetching...</span>
+                </div>
+                <div class="aqi-card fade-in-premium aqi-bangalore">
+                    <span class="aqi-city">Bangalore</span>
+                    <div class="aqi-value" id="aqi-bangalore-value">--</div>
+                    <span class="aqi-status" id="aqi-bangalore-status">Fetching...</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section section-framed">
-        <div class="section-divider"></div>
-        <div class="container split-layout experience-layout">
-            <div class="image-block reveal-image image-frame" data-parallax-scope>
-                <img class="parallax-shift theme-lake-pano-img" data-parallax-speed="0.14"
-                    src="assets/themes/lake_evening.png" alt="Tehri Lake at Dusk">
-            </div>
-            <div class="text-block reveal-right">
-                <span class="section-label">04 · The Narrative</span>
-                <h2>A Rhythm of Reflection</h2>
-                <p class="experience-quote">"Five years from now, this will either be obvious or it will be
-                    unavailable."</p>
-                <div class="features-list" style="margin-top: 30px;">
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>A True Destination:</strong> Tehri has evolved from a stopover into an exclusive
-                            retreat.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Expressway Access:</strong> Sleek 6 hour reach from Delhi via the new Dehradun
-                            Expressway.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Future Connectivity:</strong> The 2029 Rani Pokhari Tunnel will calibrate the journey
-                            to just 4 hours.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="interiors" class="section dark-bg section-framed">
-        <div class="section-divider"></div>
-        <div class="container split-layout">
-            <div class="text-block reveal-left">
-                <span class="section-label">05 · The Interiors</span>
-                <h2>Internalized Horizon</h2>
-                <div>
-                    <p class="lead-copy">The interiors are not designed to compete with the view; they are designed to
-                        frame it.</p>
-                </div>
-                <div class="features-list stagger-group" style="margin-top: 40px;">
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Minimalist Palettes:</strong> Bespoke furniture crafted from reclaimed oak.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Ambient Lighting:</strong> Tuned to mirror the soft Tehri dusk.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Open Philosophy:</strong> Ensures the lake remains the focal point of the home.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Hand Crafted Textures:</strong> Walls finished with local mud plaster techniques.</p>
-                    </div>
-                    <div class="feature-item">
-                        <span class="dot"></span>
-                        <p><strong>Sun Drenched Spaces:</strong> Floor to ceiling windows with optimized solar gain.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="image-block reveal-image image-frame" data-parallax-scope>
-                <img class="parallax-shift theme-villa-int" data-parallax-speed="0.1"
-                    src="assets/themes/villa_int_evening.png" alt="Estate Interior">
-            </div>
-        </div>
-    </section>
-
-    <section id="amenities" class="section dark-bg section-framed">
+<section id="why-this-place" class="section section-framed">
         <div class="section-divider"></div>
         <div class="container">
             <div class="section-intro centered-intro">
-                <span class="section-label fade-in-premium">06 · The Amenities</span>
-                <h2 class="fade-in-premium">The Luxury of Ease</h2>
-                <p class="fade-in-premium lead-copy">A bespoke suite of services designed to ensure that your time at
-                    the lake is spent on what matters most.</p>
-            </div>
-            <div class="features-grid stagger-group">
-                <div class="feature-card fade-in-premium bordered-card">
-                    <h4>Wellness & Soul</h4>
-                    <p>Private yoga decks, meditation corners, and access to organic produce from our mountain side
-                        kitchen gardens.</p>
-                </div>
-                <div class="feature-card fade-in-premium bordered-card">
-                    <h4>Concierge Life</h4>
-                    <p>On call housekeeping, pre arrival stocking, and dedicated estate security for absolute peace of
-                        mind.</p>
-                </div>
-                <div class="feature-card fade-in-premium bordered-card">
-                    <h4>Lake Access</h4>
-                    <p>Dedicated waterfront mooring for personal boats and a private lakeside promenade for evening
-                        walks.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="philosophy" class="section">
-        <div class="container lifestyle-pillars">
-            <div class="pillar-item reveal-up">
-                <div class="pillar-content">
-                    <span class="pillar-num">01</span>
-                    <h3>Life Beyond Ordinary</h3>
-                    <p>Experience a life that rejects the mundane in favor of the monumental. Each day is curated to be
-                        an encounter with the sublime.</p>
-                </div>
-            </div>
-            <div class="pillar-item reveal-up" data-delay="0.1">
-                <div class="pillar-content">
-                    <span class="pillar-num">02</span>
-                    <h3>Generational Architecture</h3>
-                    <p>These aren't just estates; they are legacies. Engineered with timeless stone and modern steel to
-                        be an heirloom for your family.</p>
-                </div>
-            </div>
-            <div class="pillar-item reveal-up" data-delay="0.2">
-                <div class="pillar-content">
-                    <span class="pillar-num">03</span>
-                    <h3>Nature Breathes with You</h3>
-                    <p>Architecture that listens. Where the boundary between your home and the Tehri breeze dissolves
-                        into a single, fluid breath.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="why-this-place" class="section section-framed">
-        <div class="section-divider"></div>
-        <div class="container">
-            <div class="section-intro centered-intro">
-                <span class="section-label fade-in-premium">The Destination</span>
+                <span class="section-label fade-in-premium">03 · The Destination</span>
                 <h2 class="fade-in-premium">Why This Place?</h2>
             </div>
 
@@ -432,51 +256,11 @@
         </div>
     </section>
 
-    <section id="aqi-comparison" class="section dark-bg section-framed">
-        <div class="section-divider"></div>
-        <div class="container">
-            <div class="section-intro centered-intro">
-                <span class="section-label fade-in-premium">The Air You Breathe</span>
-                <h2 class="fade-in-premium">Live Air Quality</h2>
-                <p class="fade-in-premium lead-copy">The contrast between the urban grid and the mountains, in
-                    real time.</p>
-            </div>
-
-            <div class="aqi-grid stagger-group">
-                <div class="aqi-card fade-in-premium aqi-tehri">
-                    <span class="aqi-city">Tehri, Uttarakhand</span>
-                    <div class="aqi-value" id="aqi-tehri-value">--</div>
-                    <span class="aqi-status" id="aqi-tehri-status">Pure & Pristine</span>
-                </div>
-                <div class="aqi-card fade-in-premium aqi-delhi">
-                    <span class="aqi-city">Delhi</span>
-                    <div class="aqi-value" id="aqi-delhi-value">--</div>
-                    <span class="aqi-status" id="aqi-delhi-status">Fetching...</span>
-                </div>
-                <div class="aqi-card fade-in-premium aqi-gurugram">
-                    <span class="aqi-city">Gurugram</span>
-                    <div class="aqi-value" id="aqi-gurugram-value">--</div>
-                    <span class="aqi-status" id="aqi-gurugram-status">Fetching...</span>
-                </div>
-                <div class="aqi-card fade-in-premium aqi-noida">
-                    <span class="aqi-city">Noida, UP</span>
-                    <div class="aqi-value" id="aqi-noida-value">--</div>
-                    <span class="aqi-status" id="aqi-noida-status">Fetching...</span>
-                </div>
-                <div class="aqi-card fade-in-premium aqi-bangalore">
-                    <span class="aqi-city">Bangalore</span>
-                    <div class="aqi-value" id="aqi-bangalore-value">--</div>
-                    <span class="aqi-status" id="aqi-bangalore-status">Fetching...</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="location" class="section section-framed">
+<section id="location" class="section section-framed">
         <div class="section-divider"></div>
         <div class="container split-layout">
             <div class="text-block reveal-left">
-                <span class="section-label">05 · The Tehri Canvas</span>
+                <span class="section-label">04 · The Tehri Canvas</span>
                 <h2>A Sanctuary in Dev Bhoomi</h2>
                 <div>
                     <p class="lead-copy">Tehri Lake is not just a body of water; it is a micro climate of absolute
@@ -508,7 +292,165 @@
         </div>
     </section>
 
-    <section id="terrace" class="section section-framed">
+<section class="image-break" data-parallax-scope>
+        <div class="parallax-container">
+            <div class="parallax-img parallax-shift villa-shot-bg" data-parallax-speed="0.24"></div>
+        </div>
+        <div class="image-break-overlay"></div>
+        <div class="parallax-overlay cinematic-panel">
+            <span class="section-label fade-in-premium">A New Horizon</span>
+            <h2 class="fade-in-premium">The Shift</h2>
+            <p class="fade-in-premium">The next decade will not reward more construction. It will reward access. Access
+                to clean air, water, and silence.</p>
+        </div>
+    </section>
+
+<section id="experience" class="section section-framed">
+        <div class="section-divider"></div>
+        <div class="container split-layout experience-layout">
+            <div class="image-block reveal-image image-frame" data-parallax-scope>
+                <img class="parallax-shift theme-lake-pano-img" data-parallax-speed="0.14"
+                    src="assets/themes/lake_evening.png" alt="Tehri Lake at Dusk">
+            </div>
+            <div class="text-block reveal-right">
+                <span class="section-label">05 · The Narrative</span>
+                <h2>A Rhythm of Reflection</h2>
+                <p class="experience-quote">"Five years from now, this will either be obvious or it will be
+                    unavailable."</p>
+                <div class="features-list" style="margin-top: 30px;">
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>A True Destination:</strong> Tehri has evolved from a stopover into an exclusive
+                            retreat.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Expressway Access:</strong> Sleek 6 hour reach from Delhi via the new Dehradun
+                            Expressway.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Future Connectivity:</strong> The 2029 Rani Pokhari Tunnel will calibrate the journey
+                            to just 4 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="villas" class="section dark-bg section-framed">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-intro centered-intro">
+                <span class="section-label fade-in-premium">06 · The Estates</span>
+                <h2 class="fade-in-premium">Thirty Estates. <br>Zero Compromises.</h2>
+                <p class="fade-in-premium lead-copy">A low density master plan where each residence is a fully staffed
+                    sanctuary. Designed to
+                    honour the lake, not compete with it.</p>
+            </div>
+
+            <div class="features-grid stagger-group">
+                <div class="feature-card fade-in-premium bordered-card">
+                    <h4>Unobstructed Views</h4>
+                    <p>Every plot is strictly oriented to an unobstructed line of the lake and the illuminated iconic
+                        Dobra Chanthi bridge.</p>
+                </div>
+                <div class="feature-card fade-in-premium bordered-card">
+                    <h4>Curated Exclusivity</h4>
+                    <p>A shared, lake oriented ecosystem designed for a tourism market that is scaling, not just
+                        stabilising.</p>
+                </div>
+                <div class="feature-card fade-in-premium bordered-card">
+                    <h4>Long Term Scarcity</h4>
+                    <p>We are not maximizing units; we are maximizing value. Scarcity is a construction decision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="architecture" class="section section-framed">
+        <div class="section-divider"></div>
+        <div class="container split-layout">
+            <div class="text-block reveal-left">
+                <span class="section-label">07 · The Architecture</span>
+                <h2>A Choreography of Glass and Stone</h2>
+                <div>
+                    <p class="lead-copy">Inspired by the rugged purity of the Himalayas, our estates are a dialogue
+                        between architectural precision and raw nature.</p>
+                </div>
+                <div class="features-list stagger-group" style="margin-top: 40px;">
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Locally Sourced:</strong> Quartz stone structures that belong to the land.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Framed Vistas:</strong> Low-E glass prioritizes the view as the primary artwork.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Cantilevered Decks:</strong> Engineered to hover over the lake side slopes.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Double Height Living:</strong> A volume of space that matches the scale of the
+                            valley.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Thermal Massing:</strong> Intelligent stone placement for natural climate regulation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-block reveal-image image-frame" data-parallax-scope>
+                <img class="parallax-shift theme-villa-ext" data-parallax-speed="0.1"
+                    src="assets/themes/villa_ext_evening.png" alt="Architectural Detail">
+            </div>
+        </div>
+    </section>
+
+<section id="interiors" class="section dark-bg section-framed">
+        <div class="section-divider"></div>
+        <div class="container split-layout">
+            <div class="text-block reveal-left">
+                <span class="section-label">08 · The Interiors</span>
+                <h2>Internalized Horizon</h2>
+                <div>
+                    <p class="lead-copy">The interiors are not designed to compete with the view; they are designed to
+                        frame it.</p>
+                </div>
+                <div class="features-list stagger-group" style="margin-top: 40px;">
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Minimalist Palettes:</strong> Bespoke furniture crafted from reclaimed oak.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Ambient Lighting:</strong> Tuned to mirror the soft Tehri dusk.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Open Philosophy:</strong> Ensures the lake remains the focal point of the home.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Hand Crafted Textures:</strong> Walls finished with local mud plaster techniques.</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="dot"></span>
+                        <p><strong>Sun Drenched Spaces:</strong> Floor to ceiling windows with optimized solar gain.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-block reveal-image image-frame" data-parallax-scope>
+                <img class="parallax-shift theme-villa-int" data-parallax-speed="0.1"
+                    src="assets/themes/villa_int_evening.png" alt="Estate Interior">
+            </div>
+        </div>
+    </section>
+
+<section id="terrace" class="section section-framed">
         <div class="section-divider"></div>
         <div class="container split-layout experience-layout">
             <div class="image-block reveal-image image-frame" data-parallax-scope>
@@ -516,7 +458,7 @@
                     alt="Poolside Luxury">
             </div>
             <div class="text-block reveal-right">
-                <span class="section-label">06 · The Terrace</span>
+                <span class="section-label">09 · The Terrace</span>
                 <h2>Suspended in Blue</h2>
                 <div>
                     <p class="lead-copy">The most prized square footage of Blue Water Bridge View isn't inside. It's out
@@ -543,11 +485,130 @@
         </div>
     </section>
 
-    <section class="section section-framed">
+<section id="amenities" class="section dark-bg section-framed">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-intro centered-intro">
+                <span class="section-label fade-in-premium">10 · The Amenities</span>
+                <h2 class="fade-in-premium">The Luxury of Ease</h2>
+                <p class="fade-in-premium lead-copy">A bespoke suite of services designed to ensure that your time at
+                    the lake is spent on what matters most.</p>
+            </div>
+            <div class="features-grid stagger-group">
+                <div class="feature-card fade-in-premium bordered-card">
+                    <h4>Wellness & Soul</h4>
+                    <p>Private yoga decks, meditation corners, and access to organic produce from our mountain side
+                        kitchen gardens.</p>
+                </div>
+                <div class="feature-card fade-in-premium bordered-card">
+                    <h4>Concierge Life</h4>
+                    <p>On call housekeeping, pre arrival stocking, and dedicated estate security for absolute peace of
+                        mind.</p>
+                </div>
+                <div class="feature-card fade-in-premium bordered-card">
+                    <h4>Lake Access</h4>
+                    <p>Dedicated waterfront mooring for personal boats and a private lakeside promenade for evening
+                        walks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison" class="section section-framed">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-intro centered-intro">
+                <span class="section-label fade-in-premium">11 · The Benchmark</span>
+                <h2 class="fade-in-premium">Comparable Projects in the Vicinity</h2>
+                <p class="fade-in-premium lead-copy">A transparent evaluation of Devbhumi's most prominent developments.</p>
+            </div>
+            
+            <div class="comparison-table-wrapper fade-in-premium" style="margin-top: 50px; overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Parameters</th>
+                            <th class="highlight-col">The Sovereign Estate <span class="brand-tag">[Archage]</span></th>
+                            <th>Terra Grande <span class="brand-tag">[Eldeco]</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="section-row">
+                            <td colspan="3">Location & View</td>
+                        </tr>
+                        <tr>
+                            <td>View</td>
+                            <td class="highlight-col">Facing directly the Blue Waters of River Bhagirathi [tributary of River Ganga] <br><br> Dobra Chanti Bridge with its spectacular lights in the night <br><br> Situated in the lap of Himalayas</td>
+                            <td>River Ganga at a far away distance</td>
+                        </tr>
+                        <tr>
+                            <td>Slope</td>
+                            <td class="highlight-col">Gradual [approx 20°] and feels very safe</td>
+                            <td>Very Steep [approx 35°]</td>
+                        </tr>
+
+                        <tr class="section-row">
+                            <td colspan="3">Villas</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td class="highlight-col">Boutique</td>
+                            <td>Commercial</td>
+                        </tr>
+                        <tr>
+                            <td>Architecture</td>
+                            <td class="highlight-col">A+</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>Construction Quality</td>
+                            <td class="highlight-col">A+</td>
+                            <td>B</td>
+                        </tr>
+
+                        <tr class="section-row">
+                            <td colspan="3">Price [Premium 5 Bed Villa with Pool]</td>
+                        </tr>
+                        <tr>
+                            <td>Today</td>
+                            <td class="highlight-col font-serif" style="font-size: 18px;">15 Cr</td>
+                            <td class="font-serif" style="font-size: 18px;">25 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>Expected in 12 months</td>
+                            <td class="highlight-col font-serif" style="font-size: 18px;">20 Cr</td>
+                            <td class="font-serif" style="font-size: 18px;">28 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>Expected in 24 months</td>
+                            <td class="highlight-col font-serif" style="font-size: 18px;">27 Cr</td>
+                            <td class="font-serif" style="font-size: 18px;">31 Cr</td>
+                        </tr>
+                        <tr>
+                            <td>Expected in 36 months</td>
+                            <td class="highlight-col font-serif" style="font-size: 18px;">35 Cr</td>
+                            <td class="font-serif" style="font-size: 18px;">35 Cr</td>
+                        </tr>
+                        
+                        <tr class="section-row">
+                            <td colspan="3">Reference</td>
+                        </tr>
+                        <tr>
+                            <td>Website</td>
+                            <td class="highlight-col"><a href="http://www.archage.com/sovereign" target="_blank" style="color: var(--mineral);">archage.com/sovereign</a></td>
+                            <td><a href="https://terragrande.in/rishikesh-homepage/" target="_blank" style="color: inherit; text-decoration: underline;">terragrande.in</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+<section class="section section-framed">
         <div class="section-divider"></div>
         <div class="container split-layout experience-layout">
             <div class="text-block reveal-left">
-                <span class="section-label">07 · The Philosophy</span>
+                <span class="section-label">12 · The Philosophy</span>
                 <h2>The Art of Slowing Down</h2>
                 <div class="lead-copy">
                     <p>In an era of unrelenting urban density, Blue Water Bridge View offers a rare sanctuary: a
@@ -578,11 +639,40 @@
         </div>
     </section>
 
-    <section id="legacy" class="section dark-bg section-framed">
+<section id="philosophy" class="section">
+        <div class="container lifestyle-pillars">
+            <div class="pillar-item reveal-up">
+                <div class="pillar-content">
+                    <span class="pillar-num">01</span>
+                    <h3>Life Beyond Ordinary</h3>
+                    <p>Experience a life that rejects the mundane in favor of the monumental. Each day is curated to be
+                        an encounter with the sublime.</p>
+                </div>
+            </div>
+            <div class="pillar-item reveal-up" data-delay="0.1">
+                <div class="pillar-content">
+                    <span class="pillar-num">02</span>
+                    <h3>Generational Architecture</h3>
+                    <p>These aren't just estates; they are legacies. Engineered with timeless stone and modern steel to
+                        be an heirloom for your family.</p>
+                </div>
+            </div>
+            <div class="pillar-item reveal-up" data-delay="0.2">
+                <div class="pillar-content">
+                    <span class="pillar-num">03</span>
+                    <h3>Nature Breathes with You</h3>
+                    <p>Architecture that listens. Where the boundary between your home and the Tehri breeze dissolves
+                        into a single, fluid breath.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="legacy" class="section dark-bg section-framed">
         <div class="section-divider"></div>
         <div class="container">
             <div class="section-intro centered-intro">
-                <span class="section-label fade-in-premium">08 · Legacy Ownership</span>
+                <span class="section-label fade-in-premium">13 · Legacy Ownership</span>
                 <h2 class="fade-in-premium">Built for Succession</h2>
                 <p class="fade-in-premium lead-copy">We do not talk about returns. We talk about heritage. These estates
                     are engineered with timeless stone and modern steel to be an heirloom for your family, managed with
@@ -608,7 +698,51 @@
         </div>
     </section>
 
-    <footer id="contact" class="footer section-framed">
+    <section id="facility-management" class="section section-framed">
+        <div class="section-divider"></div>
+        <div class="container">
+            <div class="section-intro centered-intro">
+                <span class="section-label fade-in-premium">14 · While You Are Away</span>
+                <h2 class="fade-in-premium">Life's easier with trusted companions.</h2>
+                <p class="fade-in-premium lead-copy">Handing over the keys is the beginning. Our estate team cares for your home as one of our own — daily, quietly, and out of your way.</p>
+            </div>
+            
+            <div class="benefits-grid stagger-group" style="margin-top: 60px;">
+                <div class="benefit-card fade-in-premium bordered-card">
+                    <span class="value-tag" style="margin-bottom: 15px;">01</span>
+                    <h4>Daily housekeeping</h4>
+                    <p>Linens, surfaces, air, order — ready the moment you arrive.</p>
+                </div>
+                <div class="benefit-card fade-in-premium bordered-card">
+                    <span class="value-tag" style="margin-bottom: 15px;">02</span>
+                    <h4>Estate maintenance</h4>
+                    <p>Gardens, plumbing, pools, electricals — watched year-round.</p>
+                </div>
+                <div class="benefit-card fade-in-premium bordered-card">
+                    <span class="value-tag" style="margin-bottom: 15px;">03</span>
+                    <h4>Kitchen & groceries</h4>
+                    <p>A stocked fridge and a home-cooked meal on the first evening.</p>
+                </div>
+                <div class="benefit-card fade-in-premium bordered-card">
+                    <span class="value-tag" style="margin-bottom: 15px;">04</span>
+                    <h4>Concierge & transport</h4>
+                    <p>Cars, boats, guides, bookings — arranged before you ask.</p>
+                </div>
+                <div class="benefit-card fade-in-premium bordered-card">
+                    <span class="value-tag" style="margin-bottom: 15px;">05</span>
+                    <h4>Managed rentals</h4>
+                    <p>When you are not here, a curated tenancy — on your terms.</p>
+                </div>
+                <div class="benefit-card fade-in-premium bordered-card">
+                    <span class="value-tag" style="margin-bottom: 15px;">06</span>
+                    <h4>Security, always</h4>
+                    <p>24-hour patrol, CCTV, and a single number that always answers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer id="contact" class="footer section-framed">
         <div class="section-divider"></div>
         <div class="container split-layout">
             <div class="footer-brand">

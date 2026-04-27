@@ -2106,3 +2106,77 @@ img {
         width: auto;
     }
 }
+/* --- Comparison Table --- */
+.comparison-table-wrapper {
+    width: 100%;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.02);
+}
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 15px;
+}
+.comparison-table th, .comparison-table td {
+    padding: 24px 30px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+}
+.comparison-table th {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--ink);
+    border-bottom: 2px solid var(--mineral);
+    background: rgba(0, 0, 0, 0.02);
+}
+.comparison-table td:first-child, .comparison-table th:first-child {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    color: var(--ink);
+    opacity: 0.8;
+    width: 25%;
+    border-right: 1px solid var(--line);
+}
+.comparison-table .section-row td {
+    background: rgba(201, 169, 97, 0.05); /* mineral tint */
+    font-family: var(--font-serif);
+    font-size: 18px;
+    color: var(--mineral);
+    text-transform: none;
+    letter-spacing: normal;
+    border-right: none !important;
+}
+.comparison-table .highlight-col {
+    background: rgba(201, 169, 97, 0.03);
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    width: 37.5%;
+}
+.comparison-table th.highlight-col {
+    color: var(--mineral);
+    background: rgba(201, 169, 97, 0.08);
+}
+.comparison-table .brand-tag {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+    display: block;
+    margin-top: 6px;
+}
+[data-theme="night"] .comparison-table th { background: rgba(255, 255, 255, 0.02); }
+[data-theme="evening"] .comparison-table th { background: rgba(255, 255, 255, 0.02); }
+
+@media(max-width: 768px) {
+    .comparison-table th, .comparison-table td {
+        padding: 16px 15px;
+        font-size: 13px;
+    }
+    .comparison-table td:first-child, .comparison-table th:first-child {
+        width: 30%;
+    }
+}
