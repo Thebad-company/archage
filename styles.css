@@ -1957,3 +1957,152 @@ img {
         padding: 60px 40px;
     }
 }
+
+/* --- AQI Comparison --- */
+.aqi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+.aqi-card {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--line);
+    text-align: center;
+    transition: all 0.6s var(--ease-premium);
+}
+.aqi-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--mineral);
+    background: rgba(184, 153, 104, 0.05); /* Soft premium hint */
+}
+.aqi-city {
+    display: block;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    opacity: 0.7;
+}
+.aqi-value {
+    font-family: var(--font-serif);
+    font-size: 80px;
+    line-height: 1;
+    margin: 20px 0;
+    color: var(--mineral);
+}
+.aqi-status {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.aqi-tehri .aqi-value { color: #4ade80; }
+.aqi-delhi .aqi-value { color: #f87171; }
+.aqi-mumbai .aqi-value { color: #fbbf24; }
+
+[data-theme="morning"] .aqi-card { background: rgba(0, 0, 0, 0.02); }
+[data-theme="morning"] .aqi-status { background: rgba(0,0,0,0.05); border-color: rgba(0, 0, 0, 0.05); }
+
+/* --- Why This Place --- */
+.why-place-layout { gap: 60px; align-items: center; }
+.why-benefit-block {
+    background: var(--paper-2);
+    padding: 60px;
+    border: 1px solid var(--line);
+    transition: transform 0.6s var(--ease-premium);
+}
+.why-benefit-block h3 { margin-bottom: 40px; }
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.benefit-card h4 {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--mineral);
+}
+.benefit-card p {
+    font-size: 16px;
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+@media(max-width: 991px) {
+    .why-benefit-block { padding: 40px; }
+    .benefits-grid { gap: 30px; }
+}
+
+@media(max-width: 768px) {
+    .benefits-grid { grid-template-columns: 1fr; }
+    .aqi-grid { grid-template-columns: 1fr; }
+}
+
+/* --- Theme Popup --- */
+.theme-popup {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 380px;
+    background: var(--paper-2);
+    border: 1px solid var(--mineral);
+    padding: 30px;
+    z-index: 10000;
+    box-shadow: var(--shadow-soft);
+    transform: translateY(150%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.8s var(--ease-premium), opacity 0.8s var(--ease-premium);
+}
+.theme-popup.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.theme-popup-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--ink);
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+.theme-popup-close:hover { opacity: 1; }
+.theme-popup h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.theme-popup p {
+    font-size: 15px;
+    opacity: 0.8;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+.theme-popup-actions {
+    display: flex;
+    gap: 12px;
+}
+.theme-popup-actions button {
+    flex: 1;
+    padding: 10px 0;
+    font-size: 12px;
+    background: transparent;
+}
+@media (max-width: 768px) {
+    .theme-popup {
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        width: auto;
+    }
+}
